@@ -298,7 +298,7 @@ public class MultidimensionalGaussianGenerator {
         ImageIO.write(piano, "PNG", new File(fileName + ".png"));
     }
 
-    static void shuffleDataset(String fileDataIn, String fileLabelsIn, String fileDataOut, String fileLabelsOut, Random rand) throws IOException {
+    public static void shuffleDataset(String fileDataIn, String fileLabelsIn, String fileDataOut, String fileLabelsOut, Random rand) throws IOException {
         ArrayList<String> data = new ArrayList<>();
         ArrayList<String> labels = new ArrayList<>();
         try (
